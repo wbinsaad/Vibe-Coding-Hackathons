@@ -14,4 +14,9 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
+<!-- Portfolio Interactive Components Script -->
+{% if page.collection == 'portfolio' and page.interactive %}
+  <script src="{{ base_path }}/assets/js/portfolio-interactive.js" defer></script>
+{% endif %}
+
 <!-- end custom head snippets -->

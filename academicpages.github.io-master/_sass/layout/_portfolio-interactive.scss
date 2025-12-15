@@ -1,0 +1,380 @@
+/* ==========================================================================
+   PORTFOLIO INTERACTIVE COMPONENTS
+   Neon Terminal Theme with Accessibility
+   ========================================================================== */
+
+/* Color variables from terminal theme */
+$neon-green: #00ff00;
+$neon-green-dark: #00cc00;
+$neon-green-light: #33ff33;
+$background: #0a0a0a;
+$background-light: #1a1a1a;
+$border-green: #004400;
+
+/* Portfolio Project Page Container */
+.portfolio-project-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    h2 {
+        color: $neon-green;
+        border-bottom: 2px solid $border-green;
+        padding-bottom: 0.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-family: 'Courier New', monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    h3 {
+        color: $neon-green-light;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+        font-family: 'Courier New', monospace;
+    }
+
+    p,
+    ul,
+    blockquote {
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+
+            &::before {
+                content: '▸';
+                color: $neon-green;
+                position: absolute;
+                left: 0;
+                font-weight: bold;
+            }
+        }
+    }
+
+    blockquote {
+        border-left: 4px solid $neon-green;
+        padding-left: 1.5rem;
+        margin-left: 0;
+        font-style: italic;
+        color: $neon-green-dark;
+
+        footer {
+            margin-top: 0.5rem;
+            font-style: normal;
+            font-size: 0.9em;
+            color: $neon-green-dark;
+
+            &::before {
+                content: '— ';
+            }
+        }
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid $border-green;
+        margin: 2rem 0;
+    }
+}
+
+/* Interactive Image Hover/Focus Swap */
+.portfolio-interactive-images {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    border: 3px solid $neon-green;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        border-color: $neon-green-light;
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    }
+
+    &:focus {
+        outline: 3px solid $neon-green-light;
+        outline-offset: 2px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: opacity 0.4s ease;
+    }
+
+    .main-image {
+        opacity: 1;
+    }
+
+    .alt-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
+    &:hover .main-image,
+    &:focus .main-image {
+        opacity: 0;
+    }
+
+    &:hover .alt-image,
+    &:focus .alt-image {
+        opacity: 1;
+    }
+
+    .image-caption {
+        text-align: center;
+        padding: 0.75rem;
+        background-color: $background-light;
+        color: $neon-green-dark;
+        font-size: 0.9rem;
+        font-family: 'Courier New', monospace;
+        margin: 0;
+        border-top: 1px solid $border-green;
+    }
+}
+
+/* Accordion Components */
+.portfolio-accordion {
+    margin: 1.5rem 0;
+}
+
+.accordion-item {
+    margin-bottom: 1rem;
+    border: 2px solid $border-green;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: $background-light;
+    transition: all 0.3s ease;
+
+    &:hover {
+        border-color: $neon-green-dark;
+    }
+}
+
+.accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background-color: transparent;
+    border: none;
+    color: $neon-green;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+
+    &:hover {
+        background-color: rgba(0, 255, 0, 0.05);
+        color: $neon-green-light;
+    }
+
+    &:focus {
+        outline: 3px solid $neon-green;
+        outline-offset: -3px;
+        background-color: rgba(0, 255, 0, 0.1);
+    }
+
+    &[aria-expanded="true"] {
+        background-color: rgba(0, 255, 0, 0.08);
+        border-bottom: 1px solid $border-green;
+    }
+
+    &[aria-expanded="true"] .accordion-icon {
+        transform: rotate(90deg);
+    }
+
+    .accordion-title {
+        flex: 1;
+    }
+
+    .accordion-icon {
+        margin-left: 1rem;
+        transition: transform 0.3s ease;
+        font-size: 0.9em;
+        color: $neon-green;
+    }
+}
+
+.accordion-content {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+
+    &[aria-hidden="false"] {
+        max-height: 2000px;
+        padding: 1.5rem;
+    }
+
+    h3:first-child {
+        margin-top: 0;
+    }
+
+    p:last-child,
+    ul:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* PDF Download Section */
+.pdf-download-section {
+    text-align: center;
+    margin: 3rem auto 2rem;
+    padding: 2rem;
+    background-color: $background-light;
+    border: 2px solid $neon-green;
+    border-radius: 4px;
+    max-width: 600px;
+}
+
+.pdf-download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 3px solid $neon-green;
+    border-radius: 4px;
+    color: $neon-green;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(0, 255, 0, 0.2), transparent);
+        transition: left 0.5s ease;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: rgba(0, 255, 0, 0.1);
+        border-color: $neon-green-light;
+        color: $neon-green-light;
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+        text-shadow: 0 0 8px rgba(0, 255, 0, 0.6);
+    }
+
+    &:hover::before {
+        left: 100%;
+    }
+
+    &:focus {
+        outline: 3px solid $neon-green-light;
+        outline-offset: 4px;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    .download-icon {
+        font-size: 1.3em;
+        animation: bounce 2s ease-in-out infinite;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+.download-description {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: $neon-green-dark;
+    font-family: 'Courier New', monospace;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-project-page {
+        padding: 0.5rem;
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+        }
+    }
+
+    .accordion-header {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+
+    .accordion-content[aria-hidden="false"] {
+        padding: 1rem;
+    }
+
+    .pdf-download-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .portfolio-interactive-images {
+        border-width: 2px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .portfolio-interactive-images .alt-image {
+        display: none;
+    }
+
+    .accordion-content {
+        max-height: none !important;
+        padding: 1rem !important;
+    }
+
+    .accordion-icon {
+        display: none;
+    }
+}

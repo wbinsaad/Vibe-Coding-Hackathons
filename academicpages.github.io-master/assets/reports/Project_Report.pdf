@@ -1,0 +1,109 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+>>
+endobj
+4 0 obj
+<<
+/Length 1250
+>>
+stream
+BT
+/F1 18 Tf
+50 720 Td
+(Interactive UX Research Dashboard) Tj
+0 -30 Td
+/F1 14 Tf
+(Project Report) Tj
+0 -50 Td
+/F1 12 Tf
+(Author: [Your Name]) Tj
+0 -20 Td
+(Institution/Customer: [Client Organization]) Tj
+0 -20 Td
+(Year: 2024) Tj
+0 -40 Td
+/F1 14 Tf
+(Executive Summary) Tj
+0 -25 Td
+/F1 10 Tf
+(This project developed a comprehensive UX research dashboard designed to streamline) Tj
+0 -15 Td
+(user data analysis and insights visualization for research teams. The solution addressed) Tj
+0 -15 Td
+(critical pain points in data consolidation, visualization consistency, and team collaboration.) Tj
+0 -30 Td
+/F1 14 Tf
+(Problem Statement) Tj
+0 -25 Td
+/F1 10 Tf
+(Research teams struggled to synthesize and visualize complex user data from multiple) Tj
+0 -15 Td
+(sources, leading to delayed insights and decision-making bottlenecks. Traditional workflows) Tj
+0 -15 Td
+(required 8-12 hours per research cycle for manual data aggregation.) Tj
+0 -30 Td
+/F1 14 Tf
+(Key Outcomes) Tj
+0 -25 Td
+/F1 10 Tf
+(- 75% reduction in data consolidation time \(2-3 hours vs 8-12 hours\)) Tj
+0 -15 Td
+(- 92% user satisfaction rating \(n=45 regular users\)) Tj
+0 -15 Td
+(- 100% WCAG 2.1 AA compliance across all components) Tj
+0 -15 Td
+(- 40% increase in cross-team collaboration) Tj
+0 -30 Td
+/F1 10 Tf
+(For full project details, methodology, and research findings,) Tj
+0 -15 Td
+(please refer to the complete interactive portfolio page.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+xref
+0 6
+0000000000 65535 f
+0000000009 00000 n
+0000000058 00000 n
+0000000115 00000 n
+0000000262 00000 n
+0000001564 00000 n
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+1662
+%%EOF
