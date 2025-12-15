@@ -1,0 +1,52 @@
+           WALEED BINSAAD
+             
+   Waleed.binsaad0@gmail.com • +49 176 62395627 • Github.com/wbinsaad
+      Münchener Str. 85051, Ingolstadt • Linkedin.com/in/wbinsaad
+
+
+SUMMARY
+.NET and Python developer with hands-on experience building automation tools, system-level applications, and IoT solutions. Skilled in C#, multithreading, with a solid foundation in microcontroller-based development using Arduino and Raspberry Pi. Currently expanding expertise in UX, motivated to contribute to high-performance computing, connectivity, and embedded automotive platforms.
+
+EXPERIENCE
+Automation Developer     									          	    05.2025 - Present
+Infineon Technologies | Munich, Germany
+• Designs, develops, and implements automated tools using python to improve efficiency and quality.
+• Maintain and update existing automation tools and scripts.
+
+Software Developer - C#									          	    05.2022 - 10.2024
+Aquat Food Industries | Saudi Arabia, Jeddah
+• Developed applications and APIs using .NET and C# with Multithreading. 
+• Integrated REST APIs and managed PostgreSQL/MS SQL databases.
+• Built and deployed Dockerized applications, collaborating with DevOps teams.
+
+Web Developer (Intern)	               								           	    06.2019 - 08.2019
+King Abdulaziz University | Saudi Arabia, Jeddah
+• Assisted in designing and optimizing backend APIs for a student portal using .NET, C#.
+• Supported web development for internal university tools.
+
+EDUCATION
+User Experience Design    									         	   10.2024 – 08.2026
+Technische Hochschule Ingolstadt
+Grade: 1.9 (German system).
+Developed an AR-based onboarding system using C# & Unity, integrating usability testing with 20+ student samples.
+
+Information Technology									          	    06.2016 - 08.2020
+King Abdulaziz University
+Grade: 1.4 (German system).
+Thesis: Developed an IoT Smart Garden Automation system using Arduino, Python, Flask, C++, Raspberry Pi, and SQL.
+
+SKILLS
+* Programming Languages: C#, SQL
+* Frameworks & Technologies: .NET, .NET Core, APIs, Entity Framework
+* Cloud & DevOps: Docker, CI/CD Pipelines, Git, Agile / Scrum
+* Databases: MS SQL Server, PostgreSQL
+* Testing & Automation: xUnit, Selenium, Postman
+* Tools & Environments: Visual Studio, VS Code, Jira
+
+LANGUAGES
+* English: Fluent (C1).
+* German: Beginner (A1)
+
+INTERESTS
+* Cycling.
+* Hiking and Rock Climbing.
