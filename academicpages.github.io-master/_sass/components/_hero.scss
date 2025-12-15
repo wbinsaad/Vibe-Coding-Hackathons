@@ -1,0 +1,203 @@
+/* ==========================================================================
+   HERO SECTION - Retro Terminal Styling
+   ========================================================================== */
+
+.hero-section {
+    padding: 4rem 0 3rem 0;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+
+    /* Main headline with terminal prompt */
+    h1 {
+        font-family: 'Courier New', 'Consolas', 'Monaco', monospace;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--global-link-color);
+        margin-bottom: 2rem;
+        line-height: 1.2;
+
+        /* Neon green glow effect */
+        text-shadow:
+            0 0 10px rgba(0, 255, 0, 0.8),
+            0 0 20px rgba(0, 255, 0, 0.6),
+            0 0 30px rgba(0, 255, 0, 0.4);
+
+        /* Blinking cursor animation */
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 0.6em;
+            height: 0.9em;
+            background-color: var(--global-link-color);
+            margin-left: 0.1em;
+            animation: blink 1s step-end infinite;
+            vertical-align: baseline;
+        }
+    }
+
+    /* Supporting text */
+    p {
+        font-family: 'Courier New', 'Consolas', 'Monaco', monospace;
+        font-size: 1.2rem;
+        color: var(--global-text-color);
+        line-height: 1.8;
+        margin-bottom: 2.5rem;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+
+        /* Subtle glow for readability */
+        text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+    }
+}
+
+/* Call-to-action buttons container */
+.hero-cta {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+/* Terminal-style buttons */
+.terminal-btn {
+    font-family: 'Courier New', 'Consolas', 'Monaco', monospace;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--global-link-color);
+    background-color: transparent;
+    border: 2px solid var(--global-link-color);
+    padding: 0.8rem 1.8rem;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+
+    /* Terminal box shadow */
+    box-shadow:
+        0 0 10px rgba(0, 255, 0, 0.3),
+        inset 0 0 10px rgba(0, 255, 0, 0.1);
+
+    /* Hover effect */
+    &:hover {
+        background-color: var(--global-link-color);
+        color: var(--global-bg-color);
+        box-shadow:
+            0 0 20px rgba(0, 255, 0, 0.6),
+            0 0 30px rgba(0, 255, 0, 0.4),
+            inset 0 0 20px rgba(0, 255, 0, 0.2);
+        transform: translateY(-2px);
+        text-decoration: none;
+    }
+
+    /* Focus state for accessibility */
+    &:focus {
+        outline: 2px solid var(--global-link-color);
+        outline-offset: 4px;
+        text-decoration: none;
+    }
+
+    /* Active/pressed state */
+    &:active {
+        transform: translateY(0);
+        box-shadow:
+            0 0 10px rgba(0, 255, 0, 0.4),
+            inset 0 0 15px rgba(0, 255, 0, 0.3);
+    }
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+
+    0%,
+    49% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 1rem 2rem 1rem;
+
+        h1 {
+            font-size: 2rem;
+
+            /* Smaller cursor on mobile */
+            &::after {
+                width: 0.5em;
+                height: 0.8em;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .terminal-btn {
+        font-size: 1rem;
+        padding: 0.7rem 1.5rem;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .hero-section {
+        h1 {
+            font-size: 1.6rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+        }
+    }
+
+    .terminal-btn {
+        font-size: 0.95rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+/* Print styles - remove glow effects */
+@media print {
+    .hero-section {
+        h1 {
+            text-shadow: none;
+            color: #000;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        p {
+            text-shadow: none;
+            color: #000;
+        }
+    }
+
+    .terminal-btn {
+        border-color: #000;
+        color: #000;
+        box-shadow: none;
+    }
+}
