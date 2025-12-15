@@ -1,0 +1,264 @@
+/* ========================================================================
+   CV Modes Selector Styles
+   Neon Terminal Theme with Accessibility Features
+   ======================================================================== */
+
+.cv-modes-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.cv-modes-header {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h1 {
+        color: #00ff00;
+        font-size: 2.5rem;
+        font-family: 'Courier New', monospace;
+        text-shadow: 0 0 10px #00ff00;
+        margin-bottom: 1rem;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+}
+
+.cv-modes-intro {
+    font-size: 1.1rem;
+    color: #cccccc;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* CV Mode Cards Layout */
+.cv-modes-selector {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+.cv-mode-card {
+    background-color: #0a0a0a;
+    border: 2px solid #00ff00;
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+
+    /* Accessibility: Focus indicator */
+    &:focus-within {
+        outline: 3px solid #00ff00;
+        outline-offset: 4px;
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    }
+
+    /* Hover effect */
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 25px rgba(0, 255, 0, 0.3);
+        border-color: #00ff00;
+    }
+}
+
+.cv-mode-icon {
+    font-size: 3rem;
+    color: #00ff00;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: monospace;
+
+    .terminal-prompt {
+        display: inline-block;
+        animation: pulse 2s ease-in-out infinite;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.cv-mode-card h2 {
+    margin-bottom: 1rem;
+
+    .cv-mode-link {
+        color: #00ff00;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-family: 'Courier New', monospace;
+        display: block;
+
+        /* Accessibility: Remove underline but show on focus */
+        &:focus {
+            outline: 2px solid #00ff00;
+            outline-offset: 4px;
+            text-decoration: underline;
+        }
+
+        &:hover {
+            text-shadow: 0 0 8px #00ff00;
+        }
+    }
+}
+
+.mode-number {
+    display: inline-block;
+    color: #00aa00;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    font-weight: normal;
+}
+
+.cv-mode-description {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+
+    strong {
+        color: #00ff00;
+    }
+}
+
+.cv-mode-features {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+
+    li {
+        color: #aaaaaa;
+        padding: 0.4rem 0;
+        font-size: 0.9rem;
+        font-family: monospace;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background-color: #00ff00;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+    }
+}
+
+/* Button styles */
+.cv-mode-card .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    text-decoration: none;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    transition: all 0.2s ease;
+
+    /* Accessibility: Focus and keyboard navigation */
+    &:focus {
+        outline: 3px solid #00ff00;
+        outline-offset: 4px;
+        background-color: rgba(0, 255, 0, 0.1);
+    }
+
+    &:hover {
+        background-color: #00ff00;
+        color: #000000;
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+    }
+
+    /* Ensure minimum touch target size for accessibility */
+    min-width: 44px;
+    min-height: 44px;
+    text-align: center;
+}
+
+/* Accessibility statement section */
+.cv-modes-accessibility {
+    background-color: #0f0f0f;
+    border-left: 4px solid #00ff00;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 4px;
+
+    h2 {
+        color: #00ff00;
+        font-family: 'Courier New', monospace;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: #cccccc;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            color: #aaaaaa;
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+
+            &::before {
+                content: '►';
+                position: absolute;
+                left: 0;
+                color: #00ff00;
+            }
+
+            strong {
+                color: #00ff00;
+            }
+        }
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .cv-mode-card {
+        border-width: 3px;
+    }
+
+    .cv-mode-card h2 .cv-mode-link {
+        font-weight: bold;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+
+    .cv-mode-card,
+    .cv-mode-icon .terminal-prompt,
+    .btn {
+        transition: none;
+        animation: none;
+    }
+
+    .cv-mode-card:hover {
+        transform: none;
+    }
+}

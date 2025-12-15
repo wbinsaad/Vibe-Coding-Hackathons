@@ -1,0 +1,13 @@
+Hello, I'm Waleed Binsaad, a .NET and Python developer with a strong foundation in automation tools, system-level applications, and IoT solutions.
+
+I'm currently working as an Automation Developer at Infineon Technologies in Munich, Germany, where I design and implement automated tools using Python to improve efficiency and quality across our development processes.
+
+Previously, I spent over two years as a Software Developer at Aquat Food Industries in Jeddah, Saudi Arabia, where I developed applications and APIs using .NET and C# with multithreading. I integrated REST APIs, managed PostgreSQL and MS SQL databases, and built Dockerized applications in collaboration with DevOps teams.
+
+I hold a Master's degree in User Experience Design from Technische Hochschule Ingolstadt, where I developed an AR-based onboarding system using C# and Unity, incorporating usability testing with over 20 student participants. My Bachelor's degree in Information Technology from King Abdulaziz University included a thesis project where I built an IoT Smart Garden Automation system using Arduino, Python, Flask, and Raspberry Pi.
+
+My technical expertise spans C#, Python, and SQL, with extensive experience in .NET frameworks, Docker, CI/CD pipelines, and Agile development practices. I'm proficient in both MS SQL Server and PostgreSQL databases, and I use testing frameworks like xUnit and Selenium to ensure code quality.
+
+I'm passionate about combining my software development background with my growing UX expertise to create user-centered solutions, particularly in high-performance computing and embedded automotive platforms. Outside of work, I enjoy cycling, hiking, and rock climbing.
+
+Thank you for listening. For more details, please explore my text-based or visual CV modes, or feel free to reach out via the contact information on this site.
